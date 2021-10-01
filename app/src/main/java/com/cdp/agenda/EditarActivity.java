@@ -66,13 +66,13 @@ public class EditarActivity extends AppCompatActivity {
                     correcto = dbContactos.editarContacto(id, txtNombre.getText().toString(), txtTelefono.getText().toString(), txtCorreo.getText().toString());
 
                     if(correcto){
-                        Toast.makeText(EditarActivity.this, "REGISTRO MODIFICADO", Toast.LENGTH_LONG).show();
+                        Toast.makeText(EditarActivity.this, "MODIFIED REGISTRATION", Toast.LENGTH_LONG).show();
                         verRegistro();
                     } else {
-                        Toast.makeText(EditarActivity.this, "ERROR AL MODIFICAR REGISTRO", Toast.LENGTH_LONG).show();
+                        Toast.makeText(EditarActivity.this, "ERROR WHEN MODIFYING REGISTRATION", Toast.LENGTH_LONG).show();
                     }
                 } else {
-                    Toast.makeText(EditarActivity.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
+                    Toast.makeText(EditarActivity.this, "YOU MUST FILL IN THE REQUIRED FIELDS", Toast.LENGTH_LONG).show();
                 }
             }
         });
